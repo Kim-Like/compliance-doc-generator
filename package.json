@@ -1,0 +1,13 @@
+{
+  "name": "compliance-doc-generator",
+  "version": "1.0.0",
+  "description": "Draft privacy, terms and cookie-policy documents from structured business inputs, with explicit review flags for every missing or uncertain answer. Not legal advice.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Kim Like",
+  "engines": { "node": ">=20" },
+  "bin": { "compliance-doc-generator": "src/cli.mjs" },
+  "main": "src/index.mjs",
+  "scripts": { "test": "node --test" },
+  "keywords": ["privacy-policy", "cookie-policy", "terms-of-service", "gdpr", "compliance", "documentation"]
+}

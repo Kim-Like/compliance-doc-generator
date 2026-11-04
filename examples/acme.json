@@ -1,0 +1,46 @@
+{
+  "business": {
+    "legalName": "Acme Example Ltd",
+    "tradingName": "Acme",
+    "registrationNumber": "",
+    "address": "1 Example Street, Exampleville",
+    "contactEmail": "privacy@example.com",
+    "supervisoryAuthority": ""
+  },
+  "dpo": { "appointed": false },
+  "audience": { "minimumAge": { "value": 16, "unsure": true } },
+  "dataCollected": [
+    {
+      "category": "Contact form messages",
+      "examples": ["name", "email address", "message text"],
+      "purpose": "Reply to the enquiry",
+      "lawfulBasis": "legitimate-interests",
+      "retention": "12 months after the last message"
+    },
+    {
+      "category": "Newsletter subscribers",
+      "examples": ["email address"],
+      "purpose": "Send the monthly newsletter",
+      "lawfulBasis": "consent"
+    }
+  ],
+  "processors": [
+    { "name": "Example Mail Co", "purpose": "Sends and stores our email", "location": "EU" },
+    { "name": "Example Analytics Inc", "purpose": "Counts page views" }
+  ],
+  "transfers": { "outsideEea": null },
+  "cookies": [
+    { "name": "session", "provider": "Acme (first party)", "category": "necessary", "purpose": "Keeps you signed in", "duration": "Until you close the browser" },
+    { "name": "visit_id", "provider": "Example Analytics Inc", "category": "analytics", "purpose": "Tells visits apart" }
+  ],
+  "terms": {
+    "serviceDescription": "Acme sells hand-made example widgets through its website.",
+    "hasAccounts": true,
+    "minimumAge": 16,
+    "billing": "one-off purchase per order",
+    "currency": "euros, including tax",
+    "paymentMethods": "card, charged when the order is placed",
+    "ownsContent": true,
+    "userContent": false
+  }
+}

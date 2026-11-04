@@ -1,0 +1,47 @@
+{
+  "business": {
+    "legalName": "Acme Example Ltd",
+    "tradingName": "Acme",
+    "registrationNumber": "000000",
+    "address": "1 Example Street, Exampleville",
+    "contactEmail": "privacy@example.com",
+    "supervisoryAuthority": "Example Data Protection Authority, https://authority.example.com"
+  },
+  "dpo": { "appointed": true, "email": "dpo@example.com" },
+  "audience": { "minimumAge": 16 },
+  "dataCollected": [
+    {
+      "category": "Order details",
+      "examples": ["name", "delivery address", "items ordered"],
+      "purpose": "Deliver what you bought",
+      "lawfulBasis": "contract",
+      "retention": "6 years after the order"
+    }
+  ],
+  "otherSources": "none",
+  "processors": [
+    { "name": "Example Host Co", "purpose": "Hosts our website", "location": "EU" }
+  ],
+  "transfers": { "outsideEea": true, "safeguard": "standard contractual clauses" },
+  "automatedDecisions": false,
+  "cookies": [
+    { "name": "session", "provider": "Acme", "category": "necessary", "purpose": "Keeps you signed in", "duration": "Session" },
+    { "name": "visit_id", "provider": "Example Analytics Inc", "category": "analytics", "purpose": "Tells visits apart", "duration": "13 months" }
+  ],
+  "consent": { "mechanism": "A banner on your first visit, and a Cookie settings link in every page footer." },
+  "terms": {
+    "serviceDescription": "We sell hand-made example widgets online.",
+    "hasAccounts": true,
+    "minimumAge": 16,
+    "billing": "one-off purchase per order",
+    "currency": "euros, including tax",
+    "paymentMethods": "card, charged when the order is placed",
+    "refundPolicy": "Return unused items within 30 days for a full refund.",
+    "ownsContent": true,
+    "userContent": true,
+    "userContentLicence": "A non-exclusive licence to host and display it while your account exists.",
+    "liabilityLimit": "Our total liability for a claim is limited to the price of the order, except where the law does not allow that.",
+    "governingLaw": "Exampleland",
+    "disputeForum": "the courts of Exampleville"
+  }
+}
